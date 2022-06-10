@@ -1,0 +1,16 @@
+リモートリポジトリを新規で追加する(git remote add origin GitHubのURL)
+originと入力してあげる事で、追加できるようになる。
+＊ちなみに、originという名前はメインのリポジトリにつける慣用的な表現と考えると良い
+
+リモートレポジトリへ送信する
+git push (リモート名) (ブランチ名)
+git push origin master
+*ローカルレポジトリの内容をリモートレポジトリに送ることをプッシュと呼ぶ
+
+
+コマンドにエイリアスをつける(コマンド入力を短縮して楽にする)
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.co checkout
+globalとすることで、PC全体としての設定となる
